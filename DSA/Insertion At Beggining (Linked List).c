@@ -64,3 +64,4 @@ void main()
 		current = current->link;
 	}
 }
+//This Code Only Inserts One Node At The Beggining

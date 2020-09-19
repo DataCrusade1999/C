@@ -80,8 +80,8 @@ void main()
 	if(a==1){
 	    newnode = (struct node*)malloc(sizeof(struct node));
 	    printf("Enter Data\n");
-		scanf("%d", &newnode->data);
-		newnode->link=NULL;
+	    scanf("%d", &newnode->data);
+	    newnode->link=NULL;
 	}
 	traverse=head;
 	while(traverse->link!=0){
@@ -101,3 +101,4 @@ void main()
 	}
 	printf("The Number Of Nodes are -->%d\n",count);
 }
+// Before Running The Program Check For The Indentations

@@ -44,3 +44,4 @@ void main()
 	}
 	printf(" The Number Of Nodes Are:%d",count);
 }
+//Creation Of Nodes In Singly Linked List

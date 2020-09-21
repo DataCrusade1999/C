@@ -70,14 +70,4 @@ void main()
         count++;
     }
     printf("You Have %d Nodes\n",count);
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }

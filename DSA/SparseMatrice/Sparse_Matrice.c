@@ -35,8 +35,7 @@ void main()
     {
         printf("The Matrice Is Not A Sparse One\n");
         printf("The Number Of Zero Elements Are-->%d",counter);
-    }
-    
-    
-    
+    }  
 }
+
+//In a Sparse Matrice The Number Of Elements Which Are Zero Is Greater Than The Number of Elements Which Are Non-Zero.

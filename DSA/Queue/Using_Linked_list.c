@@ -38,7 +38,7 @@ void Dequeue()
     {
         printf("The Dequeued Element is %d",front->data);
         temp=front;
-        front=front->next;
+        //front=front->next;
         free(temp);
         printf(" Now The Queue is Empty\n");
         front=rear=0;

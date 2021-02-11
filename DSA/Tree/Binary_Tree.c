@@ -31,7 +31,25 @@ struct node *create(){
 
 }
 
+void preorder(struct node *root){
+    if (root==0)
+    {
+        return;
+    }
+    else
+    {
+        printf("%3d",root->data);
+        preorder(root->left);
+        preorder(root->right);
+    }
+    
+    
+}
+
 void main(){
     struct node *rootptr=0;
     rootptr = create();
+    printf("The preorder traversal is:");
+    preorder(rootptr);
+
 }

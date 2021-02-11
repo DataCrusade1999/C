@@ -46,10 +46,46 @@ void preorder(struct node *root){
     
 }
 
+
+
+void Inorder(struct node *root){
+    if (root==0)
+    {
+        return;
+    }
+    else
+    {
+        Inorder(root->left);
+        printf("%3d", root->data);
+        Inorder(root->right);
+    }
+ 
+}
+
+
+void Postorder(struct node *root){
+    if (root==0)
+    {
+        return;
+    }
+    else
+    {
+        Postorder(root->left);
+        Postorder(root->right);
+        printf("%3d", root->data);
+        
+    }
+ 
+}
+
 void main(){
     struct node *rootptr=0;
     rootptr = create();
     printf("The preorder traversal is:");
     preorder(rootptr);
+    printf("The Inorder traversal is:");
+    Inorder(rootptr);
+    printf("The Postorder traversal is:");
+    Postorder(rootptr);
 
 }

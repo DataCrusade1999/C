@@ -1,34 +1,32 @@
-// WAP to insert a new element in the existing linear array (1D array) at any specified 
+#include<stdio.h>
 
-//position/location. You have to take input the element and location through the user.
+void main(){
+   int position,a[7],c[8],num_to_insert;
+   printf("Enter the elements in the array\n");
+   for (int i = 0; i < 7; i++)
+   {
+      scanf("%d",&a[i]);
+   }
+   printf("Enter the element to insert\n");
+   scanf("%d",&num_to_insert);
+   printf("Enter where you want to insert the number i.e the index<7\n");
+   scanf("%d",&position);
+   for (int i = 0; i < 8; i++)
+   {
+      if (i==position-1)
+      {
+         c[i+1]=a[i];
+         c[i]=num_to_insert;
+      }
+      else
+      {
+         c[i]=a[i];
+      } 
+   }
+   printf("The resultant array is\n");
+   for (int i = 0; i < 8; i++)
+   {
+      printf("%3d",c[i]);
+   }
 
-#include <stdio.h>
- 
-void main()
-{
-   int array[100], position, c, n, value;
-   printf("Enter number of elements in array\n");
-   scanf("%d", &n);
- 
-   printf("Enter %d elements\n", n);
- 
-   for (c = 0; c < n; c++)
-      scanf("%d", &array[c]);
- 
-   printf("Enter the location where you wish to insert an element\n");
-   scanf("%d", &position);
- 
-   printf("Enter the value to insert\n");
-   scanf("%d", &value);
- 
-   for (c = n - 1; c >= position - 1; c--)
-      array[c+1] = array[c];
- 
-   array[position-1] = value;
- 
-   printf("Resultant array is\n");
- 
-   for (c = 0; c <= n; c++)
-      printf("%d\n", array[c]);
- 
 }

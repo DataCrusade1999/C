@@ -18,6 +18,11 @@ void main(){
          c[i+1]=a[i];
          c[i]=num_to_insert;
       }
+      else if (i==position)
+      {
+         c[i]=a[i];
+      }
+      
       else
       {
          c[i]=a[i];

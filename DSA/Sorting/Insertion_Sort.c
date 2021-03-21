@@ -3,13 +3,13 @@
 void main()
 {
     int j,temp;
-    int A[5]={2,7,5,9,8};
+    int A[5]={2,7,9,8,4};
     for (int i = 1; i < 5; i++)
     {
         temp=A[i];
         j=i-1;
         while (j>=0 && A[j]>temp)
-        {
+        {          
             A[j+1]=A[j];
             j--;  
         }

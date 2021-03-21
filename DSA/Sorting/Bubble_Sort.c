@@ -7,7 +7,7 @@ void main()
     int flag,temp;
     for(int i=0;i<5;i++)
     {
-        flag=0;
+        flag=0; //this stops passes from occuring if there isn't any comparision.
         for (int j = 0; j < 4-i; j++)
         {
             if (A[j]>A[j+1])
